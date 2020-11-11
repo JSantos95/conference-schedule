@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  background-color: #FFFCFF;
+  color: #50514F;
+}
+body {
+  box-sizing: border-box;
+
+  width: 98%;
+  margin: 0 auto;
+}
+
+
+/**************** HEADER *******************/
+.header {
+  margin: 40px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 4rem;
+  color: #1E6685;
+}
+
+.header-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.header-nav--item {
+  background-color: #247BA0;
+  color: #FFFCFF;
+  padding: 8px 10px;
+  margin-left: 3px;
+  align-self: center;
+}
+
+
+/**************** Event *******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** Speakers *******************/
