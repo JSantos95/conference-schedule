@@ -2,8 +2,12 @@ import React from 'react';
 
 const Event = () => {
   return (
-    <div>
-      Event
+    <div className="event">
+      <div className="event-content">
+        <h2 className="event-content--title">Join us for the biggest Web Developer Conference</h2>
+        <p className="event-content--desc">Learn and discover new things from Front End to Back End</p>
+        <button className="event-content--button">RSVP Today</button>
+      </div>
     </div>
   )
 }
