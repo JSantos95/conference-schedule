@@ -82,18 +82,32 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************** Speakers *******************/
+.speaker {
+  margin: 6rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-row-gap: 3rem;
+}
+
+.speaker-person {
+  width: 25rem;
+  height: 25rem;
+  background-color: #247BA0;
+
+  place-self: center;
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+
+}
+
+.speaker-person--img {
+}
+
+.speaker-person--name {
+  margin-top: -5rem;
+  color: white;
+  font-size: 2.5rem;
+}
