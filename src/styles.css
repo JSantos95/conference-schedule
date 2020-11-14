@@ -12,15 +12,15 @@ html {
 }
 body {
   box-sizing: border-box;
-
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
 }
 
 
 /**************** HEADER *******************/
 .header {
-  margin: 40px 10px;
+  width: 80%;
+  margin: 4rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,6 +29,7 @@ body {
 
 .header-title {
   font-size: 4rem;
+  font-weight: bolder;
   color: #1E6685;
 }
 
@@ -42,17 +43,19 @@ body {
 .header-nav--item {
   background-color: #247BA0;
   color: #FFFCFF;
-  padding: 8px 10px;
-  margin-left: 3px;
+  padding: 1rem 1.8rem;
+  margin-left: .8rem;
   align-self: center;
+  border-radius: 2px;
 }
 
 
 /**************** Event *******************/
-
 .event {
-  height: 50rem;
-  background: #247BA0;
+  height: 60rem;
+  background-image: linear-gradient(to right bottom, rgba(36, 123, 160, .8), rgba(30,	102, 133, .8)), url(img/code-background.jpg);
+  background-size: cover;
+  background-position: top;
   display: grid;
   place-items: center;
 }
@@ -63,23 +66,23 @@ body {
 }
 
 .event-content--title {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 5.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .event-content--desc {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1.2rem;
 }
 
 .event-content--button {
-  padding: .8rem 1rem;
-  border-radius: 0;
+  font-size: 2.8rem;
+  margin-top: 1.5rem;
+  padding: 2rem 6rem;
+  border-radius: 10px;
   background-color: #E8985E;
   color: #FFFCFF;
 }
-
-
 
 
 /**************** Speakers *******************/
@@ -93,14 +96,14 @@ body {
 .speaker-person {
   width: 25rem;
   height: 25rem;
-  background-color: #247BA0;
+  border: 5px solid #247BA0;
+  border-radius: 4px;
 
   place-self: center;
   text-align: center;
 
   display: grid;
   place-items: center;
-
 }
 
 .speaker-person--img {
@@ -108,6 +111,7 @@ body {
 
 .speaker-person--name {
   margin-top: -5rem;
-  color: white;
+  color: #247BA0;
   font-size: 2.5rem;
+  text-decoration: underline;
 }
