@@ -20,7 +20,7 @@ body {
 /**************** HEADER *******************/
 .header {
   width: 80%;
-  margin: 4rem auto;
+  margin: 2.5rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,8 +28,10 @@ body {
 }
 
 .header-title {
-  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 6.5rem;
   font-weight: bolder;
+  text-transform: uppercase;
   color: #1E6685;
 }
 
