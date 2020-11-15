@@ -25,8 +25,11 @@ const Speaker = () => {
   )
 
   return (
-    <div className="speaker">
-      {speakers}
+    <div>
+      <h3 className="speaker-title">Cheak Out Our Fake Guest Speakers: </h3>
+      <div className="speaker">
+        {speakers}
+      </div>
     </div>
   )
 }
