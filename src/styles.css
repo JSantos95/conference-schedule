@@ -1,3 +1,4 @@
+
 *,
 *::after,
 *::before {
@@ -8,14 +9,21 @@
 html {
   font-size: 62.5%;
   background-color: #FFFCFF;
-  color: #50514F;
+
+  --main-color: #247BA0;
+  --main-color-darker: #1E6685;
+  --main-color-lighter: #37A3D2;
+  --second-color: #E8985E;
+  --blackish: #50514F;
+  --whiteish: #FFFCFF;
+
+  color: var(--blackish);
 }
 body {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
 }
-
 
 /**************** HEADER *******************/
 .header {
@@ -32,7 +40,7 @@ body {
   font-size: 6.5rem;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #1E6685;
+  color: var(--main-color-darker);
 }
 
 .header-nav {
@@ -43,7 +51,7 @@ body {
 }
 
 .header-nav--item {
-  background-color: #247BA0;
+  background-color: var(--main-color);
   color: #FFFCFF;
   padding: 1rem 1.8rem;
   margin-left: .8rem;
@@ -55,7 +63,7 @@ body {
 /**************** Event *******************/
 .event {
   height: 60rem;
-  background-image: linear-gradient(to right bottom, rgba(36, 123, 160, .8), rgba(30,	102, 133, .8)), url(img/code-background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(55, 163, 210, .8), rgba(30,	102, 133, .8)), url(img/code-background.jpg);
   background-size: cover;
   background-position: top;
   display: grid;
@@ -82,8 +90,8 @@ body {
   margin-top: 1.5rem;
   padding: 2rem 6rem;
   border-radius: 10px;
-  background-color: #E8985E;
-  color: #FFFCFF;
+  background-color: var(--second-color);
+  color: var(--whiteish);
 }
 
 
@@ -98,7 +106,7 @@ body {
 .speaker-person {
   width: 25rem;
   height: 25rem;
-  border: 5px solid #247BA0;
+  border: 5px solid var(--main-color);
   border-radius: 4px;
 
   place-self: center;
@@ -113,7 +121,7 @@ body {
 
 .speaker-person--name {
   margin-top: -5rem;
-  color: #247BA0;
+  color: var(--main-color);
   font-size: 2.5rem;
   text-decoration: underline;
 }
