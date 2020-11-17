@@ -117,24 +117,45 @@ body {
 
 
 /**************** Speakers *******************/
+
+/****** Grid Layout ********/
 .speaker {
-  margin: 6rem 0;
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-row-gap: 3rem;
+  width: 90%;
+  margin: 6rem auto;
 }
 
 .speaker-title {
   font-size: 6rem;
   margin: 5rem auto;
   text-align: center;
-  color: var(--main-color-darker);
+  color: var(--blackish);
   text-decoration: underline;
 }
 
+/****** Flipcard ********/
 .speaker-person {
   width: 25rem;
   height: 25rem;
+  margin: 0 auto;
+  position: relative;
+  perspective: 150rem;
+}
+
+.speaker-person-card {
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 1s ease;
+  box-shadow:
+}
+
+.speaker-person-front {
+  background-image: linear-gradient(to right bottom, rgba(248,248,248, .8), 	rgba(245,245,245, .8)), url(img/layout-background.jpg);
+  background-size: cover;
   border: 5px solid var(--main-color);
   border-radius: 4px;
 
@@ -145,12 +166,41 @@ body {
   place-items: center;
 }
 
+.speaker-person-back {
+  background-image: linear-gradient(to right bottom, rgba(55, 163, 210, .8), rgba(30,	102, 133, .8)), url(img/layout-background.jpg);
+  background-size: cover;
+  border-radius: 4px;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.speaker-person:hover .speaker-person-front {
+  transform: rotateY(-180deg);
+}
+
+.speaker-person:hover .speaker-person-back {
+  transform: rotateY(0deg);
+}
+
 .speaker-person--img {
+  border-radius: 4px;
 }
 
 .speaker-person--name {
   margin-top: -5rem;
   color: var(--main-color);
   font-size: 2.5rem;
-  text-decoration: underline;
+}
+
+.speaker-person--title {
+  font-size: 2.5rem;
+  margin: 2.5rem 0 .5rem 0;
+}
+
+.speaker-person--about {
+  font-size: 1.5rem;
+}
+
+.speaker-person--topic {
+  font-size: 2rem;
 }
