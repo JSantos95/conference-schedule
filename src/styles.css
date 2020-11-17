@@ -47,6 +47,10 @@ body {
   color: var(--whiteish);
 }
 
+.header-title-link {
+  text-decoration: none;
+}
+
 .header-nav {
   list-style-type: none;
   display: flex;
@@ -71,6 +75,11 @@ body {
 
 .header-nav--item:active {
   transform: translateY(3px);
+}
+
+.header-nav--link {
+  color: var(--main-color);
+  text-decoration: none;
 }
 
 
