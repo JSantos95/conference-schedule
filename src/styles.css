@@ -70,7 +70,7 @@ body {
 }
 
 .header-nav--item:active {
-  transform: translateY(6px);
+  transform: translateY(3px);
 }
 
 
@@ -112,7 +112,7 @@ body {
 
 .event-content--button:active {
   transform: translateY(2px);
-  border: none;
+
 }
 
 
@@ -150,7 +150,7 @@ body {
   position: absolute;
   backface-visibility: hidden;
   transition: all 1s ease;
-  box-shadow:
+  box-shadow: 10px 5px 5px var(--main-color);
 }
 
 .speaker-person-front {
@@ -169,6 +169,7 @@ body {
 .speaker-person-back {
   background-image: linear-gradient(to right bottom, rgba(55, 163, 210, .8), rgba(30,	102, 133, .8)), url(img/layout-background.jpg);
   background-size: cover;
+  border: 5px solid var(--blackish);
   border-radius: 4px;
   transform: rotateY(180deg);
   text-align: center;
@@ -203,4 +204,37 @@ body {
 
 .speaker-person--topic {
   font-size: 2rem;
+}
+
+/**************** Speakers *******************/
+.footer {
+  height: 8rem;
+  background-color: var(--blackish);
+  color: var(--main-color);
+}
+
+.footer-socials {
+  width: 88%;
+  padding-top: 2.4rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-title {
+  font-size: 2rem;
+}
+
+.footer-socials i {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all .3s
+}
+
+.footer-socials i:hover {
+  transform: translateY(-2px);
+}
+
+.footer-socials i:active {
+  transform: translateY(2px);
 }
