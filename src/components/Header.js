@@ -6,9 +6,9 @@ const Header = () => {
       <div className="header">
         <h1 className="header-title">Techathon</h1>
         <ul className="header-nav">
-          <li className="header-nav--item">Home</li>
-          <li className="header-nav--item">Location</li>
-          <li className="header-nav--item">Food</li>
+          <li className="header-nav--item">Home <i class="fas fa-home"></i></li>
+          <li className="header-nav--item">Location <i class="fas fa-map-marker-alt"></i></li>
+          <li className="header-nav--item">Food <i class="fas fa-utensils"></i></li>
         </ul>
       </div>
     </div>
