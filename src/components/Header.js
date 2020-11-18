@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="header-nav--item">
-            <Link to="streams/schedule" className="header-nav--link">
+            <Link to="/streams/schedule" className="header-nav--link">
             Schedule <i class="fas fa-calendar-week"></i>
             </Link>
           </li>
