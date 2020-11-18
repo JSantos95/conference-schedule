@@ -11,7 +11,7 @@ const Person = (props) => {
         <h4 className="speaker-person--title">About <i class="fas fa-user-tie"></i></h4>
         <p className="speaker-person--about">{props.name} has worked for Big Tech Company X as a Senior Y for Z years</p>
         <h4 className="speaker-person--title">Topic <i class="fas fa-chalkboard"></i></h4>
-        <h5 className="speaker-person--topic">Some JS Framework 101</h5>
+        <h5 className="speaker-person--topic">Some Framework 101</h5>
       </div>
     </div>
   )
