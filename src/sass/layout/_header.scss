@@ -49,6 +49,10 @@
     &--link {
       color: $main-color;
       text-decoration: none;
+
+      &:hover {
+        color: $main-color-lighter;
+      }
     }
   }
 }
