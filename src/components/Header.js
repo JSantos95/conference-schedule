@@ -13,17 +13,17 @@ const Header = () => {
         <ul className="header-nav">
           <li className="header-nav--item">
             <Link to="/" className="header-nav--link">
-              Home <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i> Home
             </Link>
           </li>
           <li className="header-nav--item">
             <Link to="/streams/schedule" className="header-nav--link">
-            Schedule <i class="fas fa-calendar-week"></i>
+              <i class="fas fa-calendar-week"></i> Schedule
             </Link>
           </li>
           <li className="header-nav--item">
             <Link to="/streams/info" className="header-nav--link">
-              Info <i class="fas fa-info-circle"></i>
+             <i class="fas fa-info-circle"></i> Info
             </Link>
           </li>
         </ul>
