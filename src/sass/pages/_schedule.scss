@@ -1,0 +1,44 @@
+.schedule {
+  &-title {
+    font-size: 6rem;
+    text-align: center;
+    margin: 2rem auto 0 auto;
+    border-bottom: 2.5px solid $main-color;
+    width: 90%;
+
+  }
+
+  &-table {
+    margin: 2rem auto;
+    font-size: 3rem;
+
+    & tr:nth-child(odd){
+      background-color: #D3D3D3;
+    }
+
+    & tr:hover {
+      background-color: $main-color-lighter;
+      color: $whiteish;
+      font-weight: bold;
+    }
+
+    &--offset {
+      background-color: $whiteish;
+    }
+  }
+}
+
+tr {
+  text-align: center;
+}
+
+th {
+  width: 35rem;
+  padding: 1rem;
+  background-color: $main-color;
+  color: $whiteish;
+}
+
+td {
+  padding: 1rem;
+}

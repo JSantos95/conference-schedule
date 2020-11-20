@@ -113,6 +113,37 @@ body {
     font-size: 2rem;
     margin-bottom: 1.5rem; }
 
+.schedule-title {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem auto 0 auto;
+  border-bottom: 2.5px solid #247BA0;
+  width: 90%; }
+
+.schedule-table {
+  margin: 2rem auto;
+  font-size: 3rem; }
+  .schedule-table tr:nth-child(odd) {
+    background-color: #D3D3D3; }
+  .schedule-table tr:hover {
+    background-color: #37A3D2;
+    color: #FFFCFF;
+    font-weight: bold; }
+  .schedule-table--offset {
+    background-color: #FFFCFF; }
+
+tr {
+  text-align: center; }
+
+th {
+  width: 35rem;
+  padding: 1rem;
+  background-color: #247BA0;
+  color: #FFFCFF; }
+
+td {
+  padding: 1rem; }
+
 .header {
   width: 80%;
   margin: 0 auto 0 auto;
@@ -150,6 +181,8 @@ body {
     .header-nav--link {
       color: #247BA0;
       text-decoration: none; }
+      .header-nav--link:hover {
+        color: #37A3D2; }
 
 .footer {
   height: 8rem;
@@ -167,7 +200,8 @@ body {
     margin-left: 2rem;
     cursor: pointer;
     transition: all .3s; }
-    .footer-socials i i:hover {
-      transform: translateY(-2px); }
-    .footer-socials i i:active {
+    .footer-socials i:hover {
+      transform: translateY(-2px) scale(1.1);
+      color: #37A3D2; }
+    .footer-socials i:active {
       transform: translateY(2px); }
