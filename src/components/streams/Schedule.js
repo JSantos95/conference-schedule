@@ -3,7 +3,7 @@ import React from 'react';
 const Schedule = () => {
   return (
     <div class="schedule">
-      <h1 className="schedule-title">Our Schedule</h1>
+      <h1 className="schedule-title"><i class="fas fa-calendar-week"></i> Schedule</h1>
       <table className="schedule-table">
         <tr>
           <th className="schedule-table--offset"></th>
