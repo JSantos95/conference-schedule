@@ -2,9 +2,16 @@
   margin: 1.8rem 3rem;
 
   &-title {
-    font-size: 5rem;
+    font-size: 6rem;
     border-bottom: 2.5px solid $main-color;
-    margin-bottom: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  &-content {
+    width: 60rem;
+    margin: 0 auto;
   }
 
   &-text {
