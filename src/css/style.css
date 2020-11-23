@@ -104,9 +104,15 @@ body {
       font-size: 2.3rem; }
     .speaker-person--social {
       margin-top: 2.2rem;
-      font-size: 2.5rem; }
+      font-size: 2.8rem; }
       .speaker-person--social i {
-        margin-right: 1rem; }
+        margin-right: 1.4rem;
+        cursor: pointer;
+        transition: all .2s; }
+        .speaker-person--social i:hover {
+          transform: translateY(-3px); }
+        .speaker-person--social i:active {
+          transform: translateY(3px); }
 
 .info {
   margin: 1.8rem 3rem; }

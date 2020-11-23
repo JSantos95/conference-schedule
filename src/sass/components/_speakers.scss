@@ -85,10 +85,19 @@
 
     &--social {
       margin-top: 2.2rem;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
 
       & i {
-        margin-right: 1rem;
+        margin-right: 1.4rem;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+        &:active {
+          transform: translateY(3px);
+        }
       }
     }
   }
