@@ -125,6 +125,21 @@ body {
   border-bottom: 2.5px solid #247BA0;
   width: 90%; }
 
+.schedule-days {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly; }
+  .schedule-days--box {
+    width: 45rem;
+    padding: .8rem 1rem;
+    box-shadow: 3px 5px 5px #D3D3D3; }
+  .schedule-days--title {
+    font-size: 3rem;
+    margin: 0 0 .8rem .3rem; }
+  .schedule-days--text {
+    font-size: 2rem;
+    margin: 0 0 .5rem .8rem; }
+
 .schedule-table {
   margin: 2rem auto;
   font-size: 3rem; }
