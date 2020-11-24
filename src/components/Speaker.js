@@ -1,27 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import Faker from 'faker';
+import fetchPeople from "../api/people"
 import Person from './Person';
 
 const Speaker = () => {
 
   const [nameList, setList] = useState([]);
 
-  // eslint-disable-next-line
   useEffect(() => {
-    let arr = [];
-    for(let i = 0; i < 15; i++) {
-      let user = {
-        id: i,
-        name: Faker.name.firstName() + ' ' + Faker.name.lastName(),
-        picture: Faker.image.avatar()
-      }
-      arr.push(user);
-    }
-    setList(arr);
+    fetchPeople().then(({ results }) => {
+      console.log(results)
+      setList(results)
+    })
   }, []);
 
   const speakers = nameList.map(obj =>
-    <Person key={obj.id} name={obj.name} pic={obj.picture} />
+    <Person key={obj.cell} name={obj.name.first + ' ' + obj.name.last} pic={obj.picture.large} />
   )
 
   return (
