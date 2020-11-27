@@ -10,6 +10,12 @@
   @include respond(tab-land) {
     grid-template-columns: repeat(3, 33.3%);
   }
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 50%);
+  }
+  @include respond(phone) {
+    grid-template-columns: 100%
+  }
 
   &-title {
     font-size: 6rem;
