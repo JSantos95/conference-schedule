@@ -9,6 +9,9 @@ html {
   font-size: 62.5%;
   color: $blackish;
   background-color: $whiteish;
+  @include respond(tab-port){
+    font-size: 55%;
+  }
 }
 body {
   box-sizing: border-box;

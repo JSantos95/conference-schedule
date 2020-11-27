@@ -9,6 +9,9 @@ html {
   font-size: 62.5%;
   color: #282828;
   background-color: #FFFCFF; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 55%; } }
 
 body {
   box-sizing: border-box;
@@ -57,6 +60,12 @@ body {
   @media only screen and (max-width: 75em) {
     .speaker {
       grid-template-columns: repeat(3, 33.3%); } }
+  @media only screen and (max-width: 56.25em) {
+    .speaker {
+      grid-template-columns: repeat(2, 50%); } }
+  @media only screen and (max-width: 37.5em) {
+    .speaker {
+      grid-template-columns: 100%; } }
   .speaker-title {
     font-size: 6rem;
     margin: 5rem auto;
