@@ -51,6 +51,12 @@ body {
   width: 90%;
   margin: 6rem auto;
   /****** Flipcard ********/ }
+  @media only screen and (max-width: 87.5em) {
+    .speaker {
+      grid-template-columns: repeat(4, 25%); } }
+  @media only screen and (max-width: 75em) {
+    .speaker {
+      grid-template-columns: repeat(3, 33.3%); } }
   .speaker-title {
     font-size: 6rem;
     margin: 5rem auto;
@@ -63,13 +69,19 @@ body {
     margin: 0 auto;
     position: relative;
     perspective: 150rem; }
+    @media only screen and (max-width: 75em) {
+      .speaker-person {
+        height: 40rem; } }
     .speaker-person-card {
       width: 25rem;
       height: 25rem;
       position: absolute;
       backface-visibility: hidden;
       transition: all 1s ease;
-      box-shadow: 10px 5px 5px #247BA0; }
+      box-shadow: 5px 3px 5px #247BA0; }
+      @media only screen and (max-width: 75em) {
+        .speaker-person-card {
+          height: 20rem; } }
     .speaker-person-front {
       background-image: linear-gradient(to right bottom, rgba(248, 248, 248, 0.8), rgba(245, 245, 245, 0.8)), url(../img/layout-background.jpg);
       background-size: cover;
@@ -79,15 +91,28 @@ body {
       text-align: center;
       display: grid;
       place-items: center; }
+      @media only screen and (max-width: 75em) {
+        .speaker-person-front {
+          border: none; } }
     .speaker-person-back {
       background-image: linear-gradient(to right bottom, rgba(55, 163, 210, 0.8), rgba(30, 102, 133, 0.8)), url(../img/layout-background.jpg);
       background-size: cover;
-      border: 5px solid var(--blackish);
+      border: 3px solid #282828;
       border-radius: 4px;
       transform: rotateY(180deg);
       text-align: center; }
+      @media only screen and (max-width: 75em) {
+        .speaker-person-back {
+          transform: rotate(0);
+          margin-top: 18.5rem;
+          border: none;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0; } }
     .speaker-person:hover .speaker-person-front {
       transform: rotateY(-180deg); }
+      @media only screen and (max-width: 75em) {
+        .speaker-person:hover .speaker-person-front {
+          transform: none; } }
     .speaker-person:hover .speaker-person-back {
       transform: rotateY(0deg); }
     .speaker-person--img {
@@ -96,9 +121,15 @@ body {
       margin-top: -5rem;
       color: #247BA0;
       font-size: 2.5rem; }
+      @media only screen and (max-width: 75em) {
+        .speaker-person--name {
+          margin-top: -3rem; } }
     .speaker-person--title {
       font-size: 2.5rem;
       margin: 2.2rem 0 .5rem 0; }
+      @media only screen and (max-width: 75em) {
+        .speaker-person--title {
+          margin-top: 1rem; } }
     .speaker-person--about {
       font-size: 1.5rem; }
     .speaker-person--topic {
@@ -106,6 +137,9 @@ body {
     .speaker-person--social {
       margin-top: 2.2rem;
       font-size: 2.8rem; }
+      @media only screen and (max-width: 75em) {
+        .speaker-person--social {
+          margin-top: .8rem; } }
       .speaker-person--social i {
         margin-right: 1.4rem;
         cursor: pointer;

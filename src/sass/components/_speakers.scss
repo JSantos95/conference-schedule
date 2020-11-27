@@ -4,6 +4,12 @@
   grid-row-gap: 3rem;
   width: 90%;
   margin: 6rem auto;
+  @include respond(laptop) {
+    grid-template-columns: repeat(4, 25%);
+  }
+  @include respond(tab-land) {
+    grid-template-columns: repeat(3, 33.3%);
+  }
 
   &-title {
     font-size: 6rem;
@@ -20,6 +26,9 @@
     margin: 0 auto;
     position: relative;
     perspective: 150rem;
+    @include respond(tab-land){
+      height: 40rem;
+    }
 
     &-card {
       width: 25rem;
@@ -27,7 +36,10 @@
       position: absolute;
       backface-visibility: hidden;
       transition: all 1s ease;
-      box-shadow: 10px 5px 5px $main-color;
+      box-shadow: 5px 3px 5px $main-color;
+      @include respond(tab-land){
+        height: 20rem;
+      }
     }
 
     &-front {
@@ -41,19 +53,32 @@
 
       display: grid;
       place-items: center;
+      @include respond(tab-land){
+        border: none;
+      }
     }
 
     &-back {
       background-image: linear-gradient(to right bottom, rgba(55, 163, 210, .8), rgba(30,	102, 133, .8)), url(../img/layout-background.jpg);
       background-size: cover;
-      border: 5px solid var(--blackish);
+      border: 3px solid $blackish;
       border-radius: 4px;
       transform: rotateY(180deg);
       text-align: center;
+      @include respond(tab-land){
+        transform: rotate(0);
+        margin-top: 18.5rem;
+        border: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
     }
 
     &:hover .speaker-person-front {
       transform: rotateY(-180deg);
+      @include respond(tab-land){
+        transform: none;
+      }
     }
 
     &:hover .speaker-person-back {
@@ -68,11 +93,17 @@
       margin-top: -5rem;
       color: $main-color;
       font-size: 2.5rem;
+      @include respond(tab-land){
+        margin-top: -3rem;
+      }
     }
 
     &--title {
       font-size: 2.5rem;
       margin: 2.2rem 0 .5rem 0;
+      @include respond(tab-land){
+        margin-top: 1rem;
+      }
     }
 
     &--about {
@@ -86,6 +117,9 @@
     &--social {
       margin-top: 2.2rem;
       font-size: 2.8rem;
+      @include respond(tab-land){
+        margin-top: .8rem;
+      }
 
       & i {
         margin-right: 1.4rem;
