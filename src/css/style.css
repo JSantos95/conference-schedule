@@ -173,39 +173,47 @@ body {
     font-size: 2rem;
     margin-bottom: 1.5rem; }
 
-.schedule-title {
-  font-size: 6rem;
-  text-align: center;
-  margin: 2rem auto 0 auto;
-  border-bottom: 2.5px solid #247BA0;
-  width: 90%; }
-
-.schedule-days {
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-evenly; }
-  .schedule-days--box {
-    width: 45rem;
-    padding: .8rem 1rem;
-    box-shadow: 3px 5px 5px #D3D3D3; }
-  .schedule-days--title {
-    font-size: 3rem;
-    margin: 0 0 .8rem .3rem; }
-  .schedule-days--text {
-    font-size: 2rem;
-    margin: 0 0 .5rem .8rem; }
-
-.schedule-table {
-  margin: 2rem auto;
-  font-size: 3rem; }
-  .schedule-table tr:nth-child(odd) {
-    background-color: #D3D3D3; }
-  .schedule-table tr:hover {
-    background-color: #37A3D2;
-    color: #FFFCFF;
-    font-weight: bold; }
-  .schedule-table--offset {
-    background-color: #FFFCFF; }
+.schedule {
+  margin-bottom: 3rem; }
+  .schedule-title {
+    font-size: 6rem;
+    text-align: center;
+    margin: 2rem auto 0 auto;
+    border-bottom: 2.5px solid #247BA0;
+    width: 90%; }
+  .schedule-days {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly; }
+    @media only screen and (max-width: 37.5em) {
+      .schedule-days {
+        flex-direction: column;
+        height: 38rem; } }
+    .schedule-days--box {
+      width: 45rem;
+      padding: .8rem 1rem;
+      box-shadow: 3px 5px 5px #D3D3D3; }
+      @media only screen and (max-width: 37.5em) {
+        .schedule-days--box {
+          margin: 0 auto; } }
+    .schedule-days--title {
+      font-size: 3rem;
+      margin: 0 0 .8rem .3rem; }
+    .schedule-days--text {
+      font-size: 2rem;
+      margin: 0 0 .5rem .8rem; }
+  .schedule-table {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    font-size: 3rem; }
+    .schedule-table tr:nth-child(odd) {
+      background-color: #D3D3D3; }
+    .schedule-table tr:hover {
+      background-color: #37A3D2;
+      color: #FFFCFF;
+      font-weight: bold; }
+    .schedule-table--offset {
+      background-color: #FFFCFF; }
 
 tr {
   text-align: center; }
