@@ -244,12 +244,21 @@ td {
     color: #FFFCFF; }
     .header-title-link {
       text-decoration: none; }
+  .header-miniNav {
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .header-miniNav {
+        display: block;
+        background-color: #247BA0; } }
   .header-nav {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     font-size: 2.8rem;
     font-weight: bolder; }
+    @media only screen and (max-width: 37.5em) {
+      .header-nav {
+        width: 0; } }
     .header-nav--item {
       padding-top: .7rem;
       margin-left: 2rem;
