@@ -10,6 +10,10 @@ const Header = () => {
           <h1 className="header-title">Techathon</h1>
         </Link>
 
+        <div className="header-miniNav">
+          <i class="fas fa-bars"></i>
+        </div> 
+
         <ul className="header-nav">
           <li className="header-nav--item">
             <Link to="/" className="header-nav--link">
