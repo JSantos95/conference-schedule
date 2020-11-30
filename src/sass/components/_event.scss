@@ -10,14 +10,24 @@
     text-align: center;
     color: $whiteish;
 
+    @include respond(phone){
+      width: 95%;
+    }
+
     &--title {
       font-size: 8rem;
       text-transform: capitalize;
       margin-bottom: 1.5rem;
+      @include respond(phone){
+        font-size: 6.5rem;
+      }
     }
     &--desc {
       font-size: 3.5rem;
       margin-bottom: 1.2rem;
+      @include respond(phone){
+        font-size: 3rem;
+      }
     }
     &--button {
       font-size: 2.8rem;
@@ -28,6 +38,10 @@
       color: $whiteish;
       transition: all .2s;
       cursor: pointer;
+      @include respond(phone){
+        font-size: 2.5rem;
+        padding: 2rem 5.5rem;
+      }
 
       &:active {
         transform: translateY(2px);
