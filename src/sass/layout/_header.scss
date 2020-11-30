@@ -16,6 +16,9 @@
     font-weight: bolder;
     text-transform: uppercase;
     color: $whiteish;
+    @include respond(phone){
+      font-size: 5.2rem;
+    }
 
     &-link {
       text-decoration: none;
@@ -25,9 +28,17 @@
   &-miniNav {
     display: none;
     @include respond(phone) {
-      display: block;
-      background-color: $main-color;
+      display: inline-block;
+      margin-top: .8rem;
+      font-size: 3.5rem;
+      color: $main-color;
+      cursor: pointer;
+      transition: all .3s;
 
+      &:active {
+        transform: scale(1.2);
+        color: $blackish;
+      }
     }
   }
 
@@ -38,7 +49,7 @@
     font-size: 2.8rem;
     font-weight: bolder;
     @include respond(phone) {
-      width: 0;
+      display: none;
     }
 
     &--item {

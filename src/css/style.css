@@ -242,14 +242,24 @@ td {
     font-weight: bolder;
     text-transform: uppercase;
     color: #FFFCFF; }
+    @media only screen and (max-width: 37.5em) {
+      .header-title {
+        font-size: 5.2rem; } }
     .header-title-link {
       text-decoration: none; }
   .header-miniNav {
     display: none; }
     @media only screen and (max-width: 37.5em) {
       .header-miniNav {
-        display: block;
-        background-color: #247BA0; } }
+        display: inline-block;
+        margin-top: .8rem;
+        font-size: 3.5rem;
+        color: #247BA0;
+        cursor: pointer;
+        transition: all .3s; }
+        .header-miniNav:active {
+          transform: scale(1.2);
+          color: #282828; } }
   .header-nav {
     list-style-type: none;
     display: flex;
@@ -258,7 +268,7 @@ td {
     font-weight: bolder; }
     @media only screen and (max-width: 37.5em) {
       .header-nav {
-        width: 0; } }
+        display: none; } }
     .header-nav--item {
       padding-top: .7rem;
       margin-left: 2rem;
