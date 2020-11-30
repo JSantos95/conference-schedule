@@ -11,8 +11,8 @@ const Header = () => {
         </Link>
 
         <div className="header-miniNav">
-          <i class="fas fa-bars"></i>
-        </div> 
+          <i className="fas fa-bars"></i>
+        </div>
 
         <ul className="header-nav">
           <li className="header-nav--item">
