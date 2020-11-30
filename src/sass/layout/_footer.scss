@@ -2,12 +2,18 @@
   height: 8rem;
   background-color: $blackish;
   color: $main-color;
+  display: grid;
+  place-items: center;
 
   &-socials {
     width: 88%;
-    padding-top: 2.4rem;
     display: flex;
     flex-direction: row-reverse;
+    @include respond(phone){
+      width: 90%;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &-title {
