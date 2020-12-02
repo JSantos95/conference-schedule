@@ -226,7 +226,7 @@ body {
     text-align: center;
     margin: 2rem auto 0 auto;
     border-bottom: 2.5px solid #247BA0;
-    width: 90%; }
+    width: 95%; }
   .schedule-days {
     margin: 2rem auto;
     display: flex;
@@ -234,14 +234,16 @@ body {
     @media only screen and (max-width: 37.5em) {
       .schedule-days {
         flex-direction: column;
-        height: 38rem; } }
+        height: 38rem;
+        width: 95%; } }
     .schedule-days--box {
       width: 45rem;
       padding: .8rem 1rem;
       box-shadow: 3px 5px 5px #D3D3D3; }
       @media only screen and (max-width: 37.5em) {
         .schedule-days--box {
-          margin: 0 auto; } }
+          margin: 0 auto;
+          width: 95%; } }
     .schedule-days--title {
       font-size: 3rem;
       margin: 0 0 .8rem .3rem; }
