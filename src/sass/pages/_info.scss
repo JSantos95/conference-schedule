@@ -1,5 +1,8 @@
 .info {
   margin: 1.8rem 3rem;
+  @include respond(phone){
+    margin-top: 9rem;
+  }
 
   &-title {
     font-size: 6rem;

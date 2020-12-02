@@ -5,6 +5,9 @@
   background-position: top;
   display: grid;
   place-items: center;
+  @include respond(phone){
+    margin-top: 7rem;
+  }
 
   &-content {
     text-align: center;

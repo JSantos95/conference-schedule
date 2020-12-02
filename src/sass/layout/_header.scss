@@ -7,6 +7,7 @@
   align-items: center;
   @include respond(phone){
     width: 95%;
+    position: sticky;
   }
   @include respond(slim-phone){
     flex-direction: column;
@@ -16,6 +17,12 @@
 
   &-con {
     background-color: $blackish;
+    @include respond(phone){
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 9999;
+    }
   }
 
   &-title {
@@ -41,7 +48,8 @@
     font-size: 2.8rem;
     font-weight: bolder;
     @include respond(phone){
-      width: 50%;
+      width: 40%;
+      font-size: 3.5rem;
       justify-content: space-between;
     }
 
@@ -52,6 +60,9 @@
       text-align: center;
       cursor: pointer;
       transition: all .3s;
+      @include respond(phone){
+        margin-left: 0;
+      }
 
       &:hover {
         transform: translateY(-3px);

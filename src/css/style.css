@@ -25,6 +25,9 @@ body {
   background-position: top;
   display: grid;
   place-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .event {
+      margin-top: 7rem; } }
   .event-content {
     text-align: center;
     color: #FFFCFF; }
@@ -174,6 +177,9 @@ body {
 
 .info {
   margin: 1.8rem 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .info {
+      margin-top: 9rem; } }
   .info-title {
     font-size: 6rem;
     border-bottom: 2.5px solid #247BA0;
@@ -189,6 +195,9 @@ body {
 
 .schedule {
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .schedule {
+      margin-top: 9rem; } }
   .schedule-title {
     font-size: 6rem;
     text-align: center;
@@ -250,13 +259,20 @@ td {
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      width: 95%; } }
+      width: 95%;
+      position: sticky; } }
   @media only screen and (max-width: 22.5em) {
     .header {
       flex-direction: column;
       padding-bottom: 1rem; } }
   .header-con {
     background-color: #282828; }
+    @media only screen and (max-width: 37.5em) {
+      .header-con {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 9999; } }
   .header-title {
     font-family: 'Oswald', sans-serif;
     font-size: 6.5rem;
@@ -276,7 +292,8 @@ td {
     font-weight: bolder; }
     @media only screen and (max-width: 37.5em) {
       .header-nav {
-        width: 50%;
+        width: 40%;
+        font-size: 3.5rem;
         justify-content: space-between; } }
     .header-nav--item {
       padding-top: .7rem;
@@ -285,6 +302,9 @@ td {
       text-align: center;
       cursor: pointer;
       transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .header-nav--item {
+          margin-left: 0; } }
       .header-nav--item:hover {
         transform: translateY(-3px); }
       .header-nav--item:active {
