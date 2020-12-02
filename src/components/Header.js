@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MiniNav from './MiniNav';
 
 const Header = () => {
   return (
     <div className="header-con">
+      <MiniNav/>
       <div className="header">
-
         <Link to="/" className="header-title-link">
           <h1 className="header-title">Techathon</h1>
         </Link>
 
         <div className="header-miniNav">
-          <i className="fas fa-bars"></i>
+          <a href="#miniNav"><i className="fas fa-bars"></i></a>
         </div>
 
         <ul className="header-nav">
