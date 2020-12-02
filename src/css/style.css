@@ -206,12 +206,7 @@ body {
       height: 45rem; }
       @media only screen and (max-width: 37.5em) {
         .info-content--map {
-          width: 40rem;
-          height: 32.5rem; } }
-      @media only screen and (max-width: 22.5em) {
-        .info-content--map {
-          width: 30rem;
-          height: 22.5rem; } }
+          width: 99%; } }
 
 .schedule {
   margin-bottom: 3rem; }
