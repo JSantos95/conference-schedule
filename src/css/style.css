@@ -205,6 +205,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .schedule {
       margin-top: 9rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .schedule {
+      margin-top: 14rem; } }
   .schedule-title {
     font-size: 6rem;
     text-align: center;
@@ -236,6 +239,9 @@ body {
     margin: 2rem auto;
     padding: 0 2rem;
     font-size: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .schedule-table {
+        font-size: 1.5rem; } }
     .schedule-table tr:nth-child(odd) {
       background-color: #D3D3D3; }
     .schedule-table tr:hover {
@@ -279,6 +285,8 @@ td {
         position: fixed;
         width: 100%;
         top: 0;
+        right: 0;
+        left: 0;
         z-index: 9999; } }
   .header-title {
     font-family: 'Oswald', sans-serif;
