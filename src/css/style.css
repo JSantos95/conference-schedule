@@ -189,9 +189,16 @@ body {
   .info-content {
     width: 60rem;
     margin: 0 auto; }
-  .info-text {
-    font-size: 2rem;
-    margin-bottom: 1.5rem; }
+    .info-content--text {
+      font-size: 2rem;
+      margin-bottom: 1.5rem; }
+    .info-content--map {
+      width: 60rem;
+      height: 45rem; }
+      @media only screen and (max-width: 37.5em) {
+        .info-content--map {
+          width: 40rem;
+          height: 32.5rem; } }
 
 .schedule {
   margin-bottom: 3rem; }

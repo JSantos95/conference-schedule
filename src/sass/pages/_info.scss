@@ -15,10 +15,19 @@
   &-content {
     width: 60rem;
     margin: 0 auto;
-  }
 
-  &-text {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    &--text {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--map {
+      width: 60rem;
+      height: 45rem;
+      @include respond(phone){
+        width: 40rem;
+        height: 32.5rem;
+      }
+    }
   }
 }
