@@ -8,7 +8,6 @@ const Speaker = () => {
 
   useEffect(() => {
     fetchPeople().then(({ results }) => {
-      console.log(results)
       setList(results)
     })
   }, []);
